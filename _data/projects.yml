@@ -1,18 +1,6 @@
-- name: Qualcomm - Speech-based Automated Image Editing
-  image: ../assets/images/qualcomm.png
-  link: ../assets/resume.pdf
-
-- name: Yale University - Graduate Teaching Fellow
-  link: ../assets/resume.pdf
-  image: ../assets/images/yale.png
-
-- name: Computer Vision for Prenatal Anomaly Detection
+- name: Computer Vision for Prenatal Anomaly Detection [Journal Paper]
   link: https://obgyn.onlinelibrary.wiley.com/doi/10.1002/pd.6559
   image: ../assets/images/prenatal.png
-
-- name: Momentive.AI - CMS for SurveyMonkey
-  link: ../assets/resume.pdf
-  image: ../assets/images/surveymonkey.png
 
 - name: 2048 AI agents
   link: https://github.com/Duncan-Du/2048-python
@@ -21,12 +9,3 @@
 - name: Shuttographer - Robot Photographer Assistant
   link: ../assets/shuttographer.pdf
   image: ../assets/images/shutter.jpg
-
-- name: University of Toronto - Teaching Assistant
-  link: ../assets/resume.pdf
-  image: ../assets/images/uoft.webp
-
-- name: Royal Bank of Canada - DevOps Engineer
-  link: ../assets/resume.pdf
-  image: ../assets/images/rbc.png
-

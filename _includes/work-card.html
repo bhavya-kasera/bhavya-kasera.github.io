@@ -1,0 +1,23 @@
+<section id="work-section" class="hero is-fullheight has-text-centered">
+    <div class="container is-fluid">
+      <h2 class="work-title">Work</h2>
+      <div class="work-projects-wrapper">
+        {% for project in site.data.work %}
+          <div class="work-project-card">
+            <!-- <a href="{{project.link}}" target="_blank"> -->
+              <div class="card">
+                <!-- Circular Image -->
+                <figure class="work-project-image" style="background-image: url({{project.image}});"></figure>
+                <div class="work-card-content">
+                  <h1 class="work-project-title">
+                    {{ project.name }}
+                  </h1>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  

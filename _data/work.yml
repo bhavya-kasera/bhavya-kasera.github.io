@@ -1,0 +1,20 @@
+- name: Qualcomm - Speech-based Automated Image Editing
+  image: ../assets/images/qualcomm.png
+  link: ../assets/resume.pdf
+
+- name: Yale University - Graduate Teaching Fellow
+  link: ../assets/resume.pdf
+  image: ../assets/images/yale.png
+
+- name: Momentive.AI - CMS for SurveyMonkey
+  link: ../assets/resume.pdf
+  image: ../assets/images/surveymonkey.png
+
+- name: University of Toronto - Teaching Assistant
+  link: ../assets/resume.pdf
+  image: ../assets/images/uoft.webp
+
+- name: Royal Bank of Canada - DevOps Engineer
+  link: ../assets/resume.pdf
+  image: ../assets/images/rbc.png
+
