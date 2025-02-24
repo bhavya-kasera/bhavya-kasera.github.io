@@ -1,0 +1,515 @@
+---
+---
+
+@import "main.scss";
+
+#navbar {
+    opacity: 0.95;
+    background-color: #553d1f;
+}
+
+#navbar .navbar-item {
+    color: white; /* Change navbar text color */
+  }
+
+.is-active {
+    font-weight: 600;
+}
+
+.navbar-dropdown {
+    border: none;
+    right: 0;
+    left: auto;
+}
+
+a.navbar-item:hover,
+.navbar-link:hover {
+    background-color: rgba($color: #f3cef0, $alpha: 0.25) !important;
+    color: #fff !important;
+}
+
+a.navbar-item.is-active {
+    background-color: rgba($color: #f3cef0, $alpha: 0.25) !important;
+    color: #fff !important;
+
+    &:hover {
+        background-color: rgba($color: #553d1f, $alpha: 0.25) !important;
+        color: rgb(210, 161, 203);
+    }
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: rgb(210, 161, 203);
+}
+
+.custom-navbar {
+    background-color: rgb(223, 190, 218); /* Replace with your desired color */
+    color: #fff; /* Optional: Adjust text color for contrast */
+  }
+
+#navbar-menu {
+    background-color: #553d1f; /* Replace with your hex code */
+    color: #fff; /* Optional: Adjust text color for contrast */
+}
+
+
+#hero {
+    color: #553d1f;
+
+    &::before {
+        filter: blur(0.05rem);
+        background-image: url({{site.heroimage}});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        opacity: 1.0;
+        content: "";
+    }
+
+
+    .hero-content {
+        color: #553d1f;
+        display: flex;
+        justify-content: space-between; /* Push items to left & right */
+        align-items: center; /* Keep them aligned */
+        text-align: left; /* Ensure text aligns properly */
+        max-width: 80%; /* Adjust width as needed */
+        margin: 0 auto; /* Center the container */
+    }
+    
+    /* Ensures title aligns left */
+    .hero-content h1 {
+        color: #553d1f;
+        text-align: left;
+        flex: 1; /* Allow title to take available space */
+    }
+    
+    /* Ensures description aligns right */
+    .hero-content h3 {
+        color: #553d1f;
+        text-align: right;
+        font-size: 1.35rem;;
+        flex: 1; /* Allow description to take available space */
+    }
+    hr {
+        border: none;
+        border-top: 2px solid #553d1f !important;
+    }
+    .button {
+        background-color: #553d1f; /* Button color */
+        color: #fff; /* Button text color */
+    }
+    .button:hover {
+        background-color: #976b4e; /* Button hover color */
+    }
+}
+.title {
+    color: #553d1f;
+    font-family: 'Merriweather', light; /* Change to your desired font */
+    letter-spacing: 0.5rem;
+    font-size: 4rem!important;;
+    margin: auto 0.75rem!important;
+}
+.subtitle {
+    color: #553d1f;
+    letter-spacing: 0.15rem;
+    line-height: 1.5;
+}
+
+#about {
+    .hero-body{
+        background-color: #553d1f;
+        color: #fff;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Ensures buttons are centered */
+        gap: 1rem; /* Adjust spacing between buttons */
+        max-width: 100%;
+    }
+    
+    .button {
+        background-color: #553d1f;
+        color: #fff;
+        min-width: 15rem; /* Adjust based on preference */
+    }
+    .image {
+        max-width: 20vmax;
+        margin: auto;
+
+        img {
+            border: 0.15rem dashed #fff;
+            border-spacing: 0.1rem;
+        }
+    }
+
+    a {
+        min-width: 25vmax;
+        margin: 0.5rem;
+    }
+}
+
+#contact {
+    #contact-button {
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    svg {
+        transition: all 0.15s ease-in-out;
+        margin: auto 0.75vmax;
+
+        &:hover {
+            transform: scale(1.10);
+            filter: opacity(0.75);
+        }
+    }
+
+    hr {
+        background-color: black;
+    }
+}
+
+#blog {
+    .hero-body {
+        padding: 3rem 0.25rem 1rem 0.25rem;
+    }
+
+    .container {
+        margin: 1.5rem auto;
+    }
+
+    #blog-card {
+        transition: all 0.25s ease;
+        margin-bottom: 0.5vmax;
+        transform: scale(0.85);
+        margin-right: 2.5vmax;
+        margin-left: 2.5vmax;
+        line-height: normal;
+        border-radius: 0.25rem;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            transform: scale(0.875);
+            -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            transform: scale(1);
+            margin-bottom: 5vmax !important;
+
+            &:hover {
+                transform: scale(1.025);
+                margin-bottom: 5vmax !important;
+                -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+                -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            .image {
+                padding-top: 50% !important;
+            }
+        }
+
+        .title {
+            margin: 0.5rem !important;
+        }
+
+        .content {
+            margin: 0.5rem;
+        }
+
+        .column {
+            display: grid;
+
+            .image {
+                border-radius: 0.25rem;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+#search {
+    border-bottom: 0.15rem solid;
+
+    input {
+        border: none;
+        outline: none;
+        font-weight: 500 !important;
+
+        &::placeholder {
+            font-weight: 500;
+            color: grey;
+            letter-spacing: 0.25rem;
+        }
+    }
+
+    .button {
+        transition: all 0.25s ease;
+        &:focus {
+            outline: 0.25rem solid white;
+        }
+
+        border: none;
+    }
+}
+
+
+#projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0 2rem;
+    scroll-margin-top: 5rem; /* Ensures proper positioning when navigating */
+    background-image: url({{site.heroimage}});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; /* Added to avoid layout issues */
+    overflow-x: auto; /* Allow scrolling */
+}
+
+.projects-title {
+    color: #553d1f; /* Title text color */
+    font-size: 2.5rem; /* Adjust the size of the title */
+    font-family: 'Merriweather', serif; /* Font family for the title */
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem; /* Space between title and project cards */
+    text-align: center; /* Center the title */
+}
+
+.projects-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    justify-content: start; /* Align items to the start */
+    flex-wrap: nowrap; /* Ensure items are not wrapped */
+    overflow-x: auto; /* Ensure horizontal scroll */
+    scrollbar-width: thin; /* Customize scrollbar width for Firefox */
+}
+
+.projects-wrapper::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width for Webkit browsers */
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(85, 49, 31, 0.6); /* Customize scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.project-card {
+    flex: 0 0 auto;
+    width: 250px; /* Adjusted width */
+    height: 350px; /* Adjusted height */
+    text-align: center;
+}
+
+.project-card .card {
+    border: none;
+    background: rgba(85, 49, 31, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.project-card figure {
+    display: block;
+    padding-top: 1.5rem;
+}
+
+.project-image {
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    white-space: normal; /* Ensure the title wraps */
+}
+
+#personal-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0 2rem;
+    scroll-margin-top: 5rem; /* Ensures proper positioning when navigating */
+    background-image: url({{site.heroimage}});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; /* Added to avoid layout issues */
+    overflow-x: auto; /* Allow scrolling */
+}
+
+.personal-title {
+    color: #553d1f; /* Title text color */
+    font-size: 2.5rem; /* Adjust the size of the title */
+    font-family: 'Merriweather', serif; /* Font family for the title */
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem; /* Space between title and project cards */
+    text-align: center; /* Center the title */
+}
+
+.personal-projects-wrapper {
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    justify-content: center; /* Align items to the start */
+    flex-wrap: nowrap; /* Ensure items are not wrapped */
+    overflow-x: auto; /* Ensure horizontal scroll */
+    scrollbar-width: thin; /* Customize scrollbar width for Firefox */
+}
+
+.personal-projects-wrapper::-webkit-scrollbar {
+    width: 8px; /* Customize scrollbar width for Webkit browsers */
+}
+
+.personal-projects-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(85, 49, 31, 0.6); /* Customize scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.personal-project-card {
+    flex: 0 0 auto;
+    width: 250px; /* Adjusted width */
+    height: 350px; /* Adjusted height */
+    text-align: center;
+}
+
+.personal-project-card .card {
+    border: none;
+    background: rgba(85, 49, 31, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.personal-project-card figure {
+    display: block;
+    padding-top: 1.5rem;
+}
+
+.personal-project-image {
+    width: 128px;
+    height: 128px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.personal-project-title {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    white-space: normal; /* Ensure the title wraps */
+}
+
+  
+
+#post {
+    @media (min-width: 768px) {
+        margin: auto 2.5vmax;
+    }
+    a {
+        text-decoration: underline;
+    }
+    #title {
+        text-decoration: none;
+    }
+    .title {
+        margin: auto;
+    }
+    #post-image {
+        border-radius: 0.25rem;
+    }
+    .subtitle {
+        letter-spacing: 0.05rem;
+    }
+
+    #description {
+        margin-bottom: 1.25vmax;
+    }
+
+    .tag {
+        margin: 0.15rem auto;
+    }
+    .content {
+        ol, ul, blockquote {
+            display: inline-block;
+        }
+        hr{
+            background-color: grey;
+        }
+        img, iframe {
+            max-width: calc(100% - 25vw);
+            margin: 0.25rem auto;
+            @media (max-width: 768px) {
+                max-width: calc(100% - 5vw);
+            }
+        }
+        ul, ol {
+            display: inline-block;
+        }
+    }
+
+    .container {
+        margin: 2.5rem auto;
+        word-break: break-word;
+        max-width: -webkit-fill-available;
+    }
+
+    #disqus_thread {
+        margin-top: 5vmax;
+    }
+}
+
+#page-section {
+    .content {
+        ul, ol, blockquote {
+            display: inline-block;
+        }
+    }
+}
+
+body {
+    background-color: #553d1f; /* Replace with your desired color */
+}
+
+#projects-section, #hero, #about, #contact, #blog {
+    background-color: #553d1f; /* Same background as the body or different */
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    background-color: #553d1f; /* Set your desired background color */
+}

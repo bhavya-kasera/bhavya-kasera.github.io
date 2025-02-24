@@ -1,0 +1,23 @@
+<section id="personal-section" class="hero is-fullheight has-text-centered">
+    <div class="container is-fluid">
+      <h2 class="personal-title">Personal</h2>
+      <div class="personal-projects-wrapper">
+        {% for project in site.data.personal %}
+          <div class="personal-project-card">
+            <a href="{{project.link}}" target="_blank">
+              <div class="card">
+                <!-- Circular Image -->
+                <figure class="personal-project-image" style="background-image: url({{project.image}});"></figure>
+                <div class="personal-card-content">
+                  <h1 class="personal-project-title">
+                    {{ project.name }}
+                  </h1>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  

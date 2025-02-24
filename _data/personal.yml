@@ -1,0 +1,15 @@
+- name: Painting
+  link: /gallery/
+  image: ../assets/images/painting.jpg
+
+- name: Ceramics
+  link: 
+  image: ../assets/images/ceramics.jpg
+
+- name: Sewing
+  link: 
+  image: ../assets/images/sewing.png
+
+- name: Reading
+  link: https://www.goodreads.com/user/show/134590278-bhavya-kasera
+  image: ../assets/images/belle.jpg
