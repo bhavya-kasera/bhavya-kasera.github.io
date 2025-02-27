@@ -6,6 +6,7 @@
 #navbar {
     opacity: 0.95;
     background-color: #553d1f;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 
 #navbar .navbar-item {
@@ -180,7 +181,10 @@ a.navbar-item.is-active {
 }
 
 #blog {
-    background-image: url({{site.heroimage}});
+    background-image: url(../images/watercolour.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .hero-body {
         padding: 3rem 0.25rem 1rem 0.25rem;
         min-height: auto; /* Remove full height */
@@ -192,6 +196,7 @@ a.navbar-item.is-active {
     }
 
     #blog-card {
+        font-family: 'Merriweather', serif;
         background-color: #553d1f;
         transition: all 0.25s ease;
         margin-bottom: 0.5vmax;
@@ -222,14 +227,29 @@ a.navbar-item.is-active {
                 -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
                 box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
             }
+        }
 
-            .image {
-                padding-top: 50% !important;
-            }
+        .image {
+            width: 100%; /* Adjust to preferred smaller size */
+            height: auto; /* Maintains aspect ratio */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 50%; /* Optional: Makes it circular */
+            border: 20px solid #553d1f; /* Adds a visible border */
+            margin: auto; /* Ensures it stays centered */
+        }
+        .columns:first-child {
+            display: flex; /* Enables flexbox */
+            justify-content: center; /* Centers image horizontally */
+            align-items: center; /* Centers image vertically */
+            padding: 1rem; /* Adds spacing */
         }
 
         .title {
             margin: 0.5rem !important;
+            font-size: 2.5rem !important;
+            letter-spacing: 0.5px !important;
         }
 
         .content {
@@ -383,7 +403,7 @@ a.navbar-item.is-active {
 }
 
 .projects-title {
-    color: #fff; /* Title text color */
+    color: #3d2a13; /* Title text color */
     font-size: 3.5rem; /* Adjust the size of the title */
     font-family: 'Merriweather', serif; /* Font family for the title */
     letter-spacing: 0.1rem;
@@ -533,22 +553,30 @@ a.navbar-item.is-active {
 
 #post {
     color: #fff;
-    @media (min-width: 768px) {
-        margin: auto 2.5vmax;
-    }
+    font-family: 'Merriweather', serif;
+    word-spacing: 1.2px;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+    background-color: #3d2a13;
+    max-width: 60%;
+    margin: 0 auto; /* Centers it horizontally */
+    // add a shadow to lift the section off the background
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+
     a {
         text-decoration: underline;
     }
-    #title {
-        color: #fff;
-        text-decoration: none;
-    }
     .title {
         margin: auto;
+        color: #fff;
+        font-size: 3rem!important;
     }
     #post-image {
-        border-radius: 0.25rem;
-    }
+        max-width: 100%; /* Ensures image resizes properly */
+        justify-content: center;
+        height: auto;
+        border-radius: 25%; /* Optional: Adds rounded corners */
+      }
     .subtitle {
         letter-spacing: 0.05rem;
     }
@@ -557,27 +585,26 @@ a.navbar-item.is-active {
         margin-bottom: 1.25vmax;
     }
 
+    h2 {
+        color: #f4d9c9;
+    }
+    h3 {
+        color: #f4d9c9;
+    }
+
     .tag {
         margin: 0.15rem auto;
     }
+    .hero-body {
+        padding: 3rem 1.5rem;
+      }
     .content {
-        ol, ul, blockquote {
-            display: inline-block;
-        }
-        hr{
-            background-color: #fff;
-        }
-        img, iframe {
-            max-width: calc(100% - 25vw);
-            margin: 0.25rem auto;
-            @media (max-width: 768px) {
-                max-width: calc(100% - 5vw);
-            }
-        }
-        ul, ol {
-            display: inline-block;
-        }
+        text-align: left;
+        color: #fff;
     }
+    .columns {
+        align-items: flex-start; /* Aligns text and image properly */
+      }
 
     .container {
         margin: 2.5rem auto;
@@ -596,11 +623,25 @@ a.navbar-item.is-active {
 }
 
 body {
-    background-color: #553d1f; /* Replace with your desired color */
+    background-image: url(../images/watercolour.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#38200a, 0.3); // Adjust opacity and color
+        z-index: 0;
+      }
 }
 
 #hero, #about, #contact, #blog {
-    background-color: #553d1f; /* Same background as the body or different */
+    background-color: #553d1f;
 }
 
 html, body {
