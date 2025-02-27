@@ -557,8 +557,8 @@ a.navbar-item.is-active {
     word-spacing: 1.2px;
     letter-spacing: 0.05rem;
     font-weight: 300;
-    background-color: #3d2a13;
-    max-width: 60%;
+    background-color: #493823;
+    max-width: 70%;
     margin: 0 auto; /* Centers it horizontally */
     // add a shadow to lift the section off the background
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
@@ -570,12 +570,14 @@ a.navbar-item.is-active {
         margin: auto;
         color: #fff;
         font-size: 3rem!important;
+        letter-spacing: 0.2rem;
+        font-weight: 400!important;
     }
     #post-image {
         max-width: 100%; /* Ensures image resizes properly */
         justify-content: center;
         height: auto;
-        border-radius: 25%; /* Optional: Adds rounded corners */
+        border-radius: 5%; /* Optional: Adds rounded corners */
       }
     .subtitle {
         letter-spacing: 0.05rem;
@@ -587,9 +589,11 @@ a.navbar-item.is-active {
 
     h2 {
         color: #f4d9c9;
+        font-weight: 400!important;
     }
     h3 {
         color: #f4d9c9;
+        font-weight: 400!important;
     }
 
     .tag {

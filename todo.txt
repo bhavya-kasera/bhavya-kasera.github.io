@@ -1,5 +1,3 @@
-- fix blog card layout
-- change post background
 - add an easter egg
 - add pages for art, ceramics, sewing
 - blog ideas
