@@ -300,7 +300,7 @@ a.navbar-item.is-active {
     display: flex;
     gap: 3rem;
     padding: 2rem 1rem;
-    justify-content: center; /* Align items to the start */
+    justify-content: start; /* Align items to the start */
     flex-wrap: nowrap; /* Ensure items are not wrapped */
     overflow-x: auto; /* Ensure horizontal scroll */
     scrollbar-width: thin; /* Customize scrollbar width for Firefox */
@@ -393,7 +393,7 @@ a.navbar-item.is-active {
     display: flex;
     gap: 6rem;
     padding: 2rem 1rem;
-    justify-content: center; /* Align items to the start */
+    justify-content: start; /* Align items to the start */
     flex-wrap: nowrap; /* Ensure items are not wrapped */
     overflow-x: auto; /* Ensure horizontal scroll */
     scrollbar-width: thin; /* Customize scrollbar width for Firefox */
@@ -474,7 +474,7 @@ a.navbar-item.is-active {
     display: flex;
     gap: 3rem;
     padding: 2rem 1rem;
-    justify-content: center; /* Align items to the start */
+    justify-content: start; /* Align items to the start */
     flex-wrap: nowrap; /* Ensure items are not wrapped */
     overflow-x: auto; /* Ensure horizontal scroll */
     scrollbar-width: thin; /* Customize scrollbar width for Firefox */
