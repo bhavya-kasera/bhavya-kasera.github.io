@@ -637,13 +637,13 @@ a.navbar-item.is-active {
       
       .image-item {
         display: flex;
-        background-color: rgb($color: #472905, $alpha: 0.6);
+        background-color: rgba(71, 41, 5, 0.6);
         flex-direction: column;
         align-items: center;
         justify-content: center;
         overflow: hidden;
         border-radius: 8px;
-        box-shadow: 3px 4px 7px rgba($color: #38200a, $alpha: 0.6);
+        box-shadow: 3px 4px 7px rgba(56, 32, 10, 0.6);
       }
       
       .gallery-project-image {
@@ -688,7 +688,7 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba($color: #38200a, $alpha: 0.2); // Adjust opacity and color
+            background: rgba(56, 32, 10, 0.2);
             z-index: 0;
     }
 }
