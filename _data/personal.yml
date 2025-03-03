@@ -1,13 +1,13 @@
 - name: Painting
-  link: /gallery/
+  link: /gallery#art
   image: ../assets/images/painting.jpg
 
 - name: Ceramics
-  link: 
+  link: /gallery#ceramics
   image: ../assets/images/ceramics.jpg
 
 - name: Sewing
-  link: 
+  link: /gallery#sewing
   image: ../assets/images/sewing.png
 
 - name: Reading
