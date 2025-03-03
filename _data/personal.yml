@@ -1,5 +1,5 @@
 - name: Painting
-  link: /gallery#art
+  link: /gallery#paintings
   image: ../assets/images/painting.jpg
 
 - name: Ceramics

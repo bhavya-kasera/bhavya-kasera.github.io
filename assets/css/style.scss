@@ -612,6 +612,36 @@ a.navbar-item.is-active {
 }
 
 #gallery-section {
+    .collapsible {
+        font-family: Merriweather, serif;
+        font-size: 2.5rem;
+        width: 80%;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+        border-radius: 8px;
+        margin: 10px 0;
+        box-shadow: 3px 4px 7px rgba(56, 32, 10, 0.6);
+        background-color: transparent; /* Makes it fully transparent */
+        color: #553d1f; /* Ensures text is visible */
+        border: 1px solid rgba(71, 41, 5, 0.6); /* Optional: Adds a subtle border */
+    }
+    
+    .collapsible::after {
+        content: " [+]"; /* Plus sign when closed */
+        float: right;
+    }
+    
+    .active::after {
+        content: " [−]"; /* Minus sign when open */
+    }
+    
+    .content {
+        display: none;
+        overflow: hidden;
+        padding: 10px;
+    }
     .category-title {
         padding-top: 3rem;
         color: #553d1f;
@@ -668,8 +698,8 @@ a.navbar-item.is-active {
       .image-caption {
         text-align: center;
         font-size: 1rem;
-        margin-top: 0.5rem;
         color: #ffffff;
+        margin: 1rem;
       }
       
 }
