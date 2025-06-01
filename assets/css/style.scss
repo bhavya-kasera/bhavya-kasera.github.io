@@ -583,13 +583,15 @@ a.navbar-item.is-active {
     .content {
         text-align: left;
         color: #fff;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
     .columns {
         align-items: flex-start; /* Aligns text and image properly */
       }
 
     .container {
-        margin: 2.5rem auto;
+        margin: 4rem auto;
         word-break: break-word;
         max-width: -webkit-fill-available;
     }
