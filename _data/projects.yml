@@ -1,3 +1,7 @@
+- name: RaiVE - AI-assisted music composition
+  link: https://www.raive.space/
+  image: ../assets/images/raive.ico
+
 - name: Computer Vision for Prenatal Anomaly Detection [Journal Paper]
   link: https://obgyn.onlinelibrary.wiley.com/doi/10.1002/pd.6559
   image: ../assets/images/prenatal.png
