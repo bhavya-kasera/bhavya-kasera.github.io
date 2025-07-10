@@ -731,3 +731,92 @@ body {
 html {
     background-color: #553d1f;
 }
+
+@media screen and (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+  
+      h1, h3 {
+        text-align: center;
+        flex: unset;
+      }
+    }
+  
+    .title {
+      font-size: 2.5rem !important;
+      letter-spacing: 0.25rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image img {
+      max-width: 80vw;
+      height: auto;
+    }
+  
+    #post {
+      max-width: 90%;
+      .content {
+        margin: 1rem;
+      }
+    }
+  
+    .navbar-menu {
+      text-align: center;
+      padding: 1rem 0;
+    }
+  
+    .work-projects-wrapper,
+    .projects-wrapper,
+    .personal-projects-wrapper {
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+  
+    .work-project-card,
+    .project-card,
+    .personal-project-card {
+      width: 85vw;
+      height: auto;
+    }
+  
+    .gallery-project-image {
+      height: 150px;
+    }
+  
+    .category-title {
+      font-size: 2rem !important;
+    }
+  
+    .collapsible {
+      font-size: 1.5rem;
+      padding: 0.75rem;
+    }
+  
+    .navbar-item {
+      padding: 0.5rem 1rem;
+    }
+  
+    .container {
+      margin: 1rem auto;
+    }
+  
+    #search input::placeholder {
+      font-size: 0.9rem;
+      letter-spacing: 0.1rem;
+    }
+  
+    .image-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
